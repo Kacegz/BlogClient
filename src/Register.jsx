@@ -8,7 +8,7 @@ export default function Register() {
   const submit = async (e) => {
     e.preventDefault();
     const response = await fetch(
-      "https://blogapi-production-2510.up.railway.app/register/",
+      "https://blogapi-aye4d6a2h6breqcg.francecentral-01.azurewebsites.net/register/",
       {
         method: "POST",
         body: JSON.stringify(user),

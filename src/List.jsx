@@ -8,7 +8,7 @@ function List() {
   async function fetchData() {
     try {
       const response = await fetch(
-        "https://blogapi-production-2510.up.railway.app/posts/"
+        "https://blogapi-aye4d6a2h6breqcg.francecentral-01.azurewebsites.net/posts/"
       );
       if (!response.ok) {
         throw new Error("Connection error");

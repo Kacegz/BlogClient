@@ -14,10 +14,10 @@ export default function Post() {
     try {
       const [postResponse, commentResponse] = await Promise.all([
         fetch(
-          `https://blogapi-production-2510.up.railway.app/posts/${postId.id}`
+          `https://blogapi-aye4d6a2h6breqcg.francecentral-01.azurewebsites.net/posts/${postId.id}`
         ),
         fetch(
-          `https://blogapi-production-2510.up.railway.app/posts/${postId.id}/comments`
+          `https://blogapi-aye4d6a2h6breqcg.francecentral-01.azurewebsites.net/posts/${postId.id}/comments`
         ),
       ]);
       if (!postResponse.ok || !commentResponse.ok) {
@@ -36,7 +36,7 @@ export default function Post() {
     e.preventDefault();
     try {
       const sendComment = await fetch(
-        `https://blogapi-production-2510.up.railway.app/posts/${postId.id}/comments`,
+        `https://blogapi-aye4d6a2h6breqcg.francecentral-01.azurewebsites.net/posts/${postId.id}/comments`,
         {
           method: "POST",
           body: JSON.stringify(newComment),
